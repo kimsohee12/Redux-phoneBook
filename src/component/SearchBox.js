@@ -9,6 +9,7 @@ const SearchBox = () => {
     const dispatch = useDispatch();
 
     const searchByName=(event)=>{
+        //preventDefault : 창이 새로고침 안되도록 하기
         event.preventDefault();  
         dispatch({type:"SEARCH_BY_NAME" , payload :{keyword}});
         setKeyword("");
@@ -20,7 +21,7 @@ const SearchBox = () => {
         <Row>
             <Col lg ={10}>
                 <Form.Control type="text" placeholder="이름을 입력해주세요."  
-                onChange={(e)=>{setKeyword(e.target.value)}} value={keyword}/>
+                onChange={(e)=>{setKeyword(e.target.value)}}/>
             </Col>
             <Col lg ={2}><Button variant="primary" type="submit">검색</Button></Col>
         </Row>
