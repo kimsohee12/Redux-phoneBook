@@ -1,1 +1,1 @@
-# mini Project - redux로 연락처 만들기
+# mini Project - redux사용해서 연락처 만들기
