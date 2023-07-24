@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 
 function BasicExample() {
   const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState("");
   const dispatch = useDispatch();
 
   const addContact=(event)=>{
@@ -23,7 +23,7 @@ function BasicExample() {
 
       <Form.Group className="mb-3" controlId="formTel">
         <Form.Label>연락처</Form.Label>
-        <Form.Control type="text" placeholder="연락처를 입력해주세요." onChange={(e)=>{setPhoneNumber(e.target.value)}} value={phoneNumber}/>
+        <Form.Control type="number" placeholder="연락처를 입력해주세요." onChange={(e)=>{setPhoneNumber(e.target.value)}} value={phoneNumber}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
       </Form.Group>

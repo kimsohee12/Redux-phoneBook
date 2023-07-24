@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 
 const ContactItem = ({item}) => {
   return (
+    <div className='contactItem'>
         <Row>
             <Col lg ={2}><img width={50} src='https://i1.sndcdn.com/avatars-000373844735-9n06kq-t500x500.jpg'/></Col>
             <Col lg ={10}>
@@ -10,6 +11,7 @@ const ContactItem = ({item}) => {
                 <div>{item.phoneNumber}</div>
             </Col>
         </Row>
+    </div>
   )
 }
 
